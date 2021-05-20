@@ -1,0 +1,17 @@
+{
+  "name": "mik.sh",
+  "version": "0.1.0",
+  "private": false,
+  "scripts": {
+    "dev": "next dev -p 2000",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "10.2.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-responsive": "^8.2.0",
+    "typeit-react": "^0.1.3"
+  }
+}
