@@ -1,11 +1,12 @@
 import Head from "next/head";
-import TypeIt from "typeit-react";
+import WhosIs from "../components/whois";
+import WhosIsMobile from "../components/whois/mobile";
 import Responsive from "react-responsive";
 
 const MobileWrapper = (props) => <Responsive {...props} maxWidth={575} />;
 const TabletUpWrapper = (props) => <Responsive {...props} minWidth={576} />;
 
-export default function Home() {
+const Home = () => {
   return (
     <div>
       <Head>
@@ -16,16 +17,14 @@ export default function Home() {
 
       <main>
         <TabletUpWrapper>
-          <h1>
-            <TypeIt element={"h1"}>$ curl mik.sh</TypeIt>
-          </h1>
+          <WhosIs />
         </TabletUpWrapper>
         <MobileWrapper>
-          <h2>
-            <TypeIt element={"h3"}>$ curl mik.sh</TypeIt>
-          </h2>
+          <WhosIsMobile />
         </MobileWrapper>
       </main>
     </div>
   );
-}
+};
+
+export default Home;
