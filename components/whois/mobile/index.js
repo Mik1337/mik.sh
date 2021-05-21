@@ -18,7 +18,7 @@ const WhoIsMobile = () => {
         <h2>FULL STACK DEVELOPER</h2>
         name: Mik<br />
         address: <a href="https://mik.sh">https://mik.sh</a><br />
-        github: <a href="github.com/mik1337">@Mik1337</a><br />
+        github: <a href="https://github.com/mik1337">@Mik1337</a><br />
         status: ACTIVE,
         `,
           startDelay: 3000,
