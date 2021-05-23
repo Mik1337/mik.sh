@@ -1,11 +1,12 @@
 import TypeIt from "typeit-react";
+import { GITHUB, WEBSITE } from "../../common/urls";
 
-const WhosIs = () => {
+const WhosIs = ({ tag }) => {
   return (
     <h1>
       <TypeIt
         options={{
-          strings: ["<h3>$ whois mik.sh</h3>"],
+          strings: [`<${tag}>$ whois mik.sh</${tag}>`],
           lifeLike: true,
           waitUntilVisible: true,
           html: true,
@@ -17,8 +18,8 @@ const WhosIs = () => {
           strings: `% This query returned 1 object<br />
         <h2>FULL STACK DEVELOPER</h2>
         name: Mik<br />
-        address: <a href="https://mik.sh">https://mik.sh</a><br />
-        github: <a href="https://github.com/mik1337">@Mik1337</a><br />
+        address: <a href="${WEBSITE}">${WEBSITE}</a><br />
+        github: <a href="${GITHUB}">@Mik1337</a><br />
         status: ACTIVE,
         `,
           startDelay: 3000,

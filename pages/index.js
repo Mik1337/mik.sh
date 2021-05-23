@@ -1,6 +1,5 @@
 import Head from "next/head";
 import WhosIs from "../components/whois";
-import WhosIsMobile from "../components/whois/mobile";
 import Responsive from "react-responsive";
 
 const MobileWrapper = (props) => <Responsive {...props} maxWidth={575} />;
@@ -17,10 +16,10 @@ const Home = () => {
 
       <main>
         <TabletUpWrapper>
-          <WhosIs />
+          <WhosIs tag={"h1"} />
         </TabletUpWrapper>
         <MobileWrapper>
-          <WhosIsMobile />
+          <WhosIs tag={"h4"} />
         </MobileWrapper>
       </main>
     </div>
