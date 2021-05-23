@@ -1,5 +1,5 @@
 import Head from "next/head";
-import WhosIs from "../components/whois";
+import WhosIs from "components/whois";
 import Responsive from "react-responsive";
 
 const MobileWrapper = (props) => <Responsive {...props} maxWidth={575} />;

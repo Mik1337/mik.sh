@@ -1,5 +1,5 @@
 import TypeIt from "typeit-react";
-import { GITHUB, WEBSITE } from "../../common/urls";
+import { GITHUB, WEBSITE } from "common/urls";
 
 const WhosIs = ({ tag }) => {
   return (
