@@ -1,6 +1,3 @@
-import TypeIt from "typeit-react";
-import { GITHUB, WEBSITE } from "common/urls";
-
 const RightImagePanel = () => {
   // image has a blur effect on it
   // and should not alter width, extra can be cropped out
@@ -15,9 +12,6 @@ const RightImagePanel = () => {
             filter: "blur(5px)",
             width: "100%",
             height: "100%",
-            left: "0",
-            top: "0",
-            display: "block",
           }}
         />
       </div>
@@ -28,6 +22,7 @@ const RightImagePanel = () => {
           justify-content: center;
           align-items: center;
           height: 100%;
+          z-index: -1;
         }
         .right-image-panel-image {
           width: 100%;
@@ -37,10 +32,6 @@ const RightImagePanel = () => {
           background-position: center;
           background-repeat: no-repeat;
         }
-        // .right-image-panel-image img {
-        //   width: 100%;
-        //   height: 100%;
-        // }
       `}</style>
     </div>
   );

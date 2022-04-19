@@ -2,7 +2,7 @@
 // the children are rendered to left and right of the container
 // split the page into 70% left and 30% right
 
-const Container = (props) => {
+const TopContainer = (props) => {
   return (
     <div className="container" style={{ height: "100vh" }}>
       {/* 70% to the left only if children have property left */}
@@ -28,16 +28,28 @@ const Container = (props) => {
           flex-direction: row;
           justify-content: space-between;
           align-items: relative;
+
           height: 100%;
+          width: 60vw;
+
+          /* background image */
+          background-image: url(${props.backgroundImage});
+          /* Create the parallax scrolling effect */
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
         }
         .left {
+          padding-left: 4em; // padding on the left
+          padding-top: 4em; // padding on the top
           flex: 0.6;
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
           position: absolute;
-          max-width: 70%;
+          max-width: 70vw;
         }
         .right {
           // right container spans 30% of the screen and is positioned to the right
@@ -52,10 +64,12 @@ const Container = (props) => {
           flex-direction: column;
           justify-content: center;
           align-items: center;
+
+          z-index: -1;
         }
       `}</style>
     </div>
   );
 };
 
-export default Container;
+export default TopContainer;
