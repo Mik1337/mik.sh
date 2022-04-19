@@ -5,8 +5,6 @@
 import React from "react";
 
 export default function ContactFormMobile() {
-  // load the contact form
-
   return (
     <>
       <iframe
@@ -19,6 +17,7 @@ export default function ContactFormMobile() {
           right: 0;
           width: 100vw;
           height: 100vh;
+
           border: none;
         }
       `}</style>

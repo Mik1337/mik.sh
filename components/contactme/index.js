@@ -4,20 +4,22 @@
 
 import React from "react";
 
-export default function ContactForm() {
+export default function ContactForm({ mobile }) {
   // load the contact form
 
   return (
     <>
-      <iframe
-        className="iFrame"
-        src="https://1tjog8nyw7c.typeform.com/to/nzvKGr9l"
-      ></iframe>
+      <div
+        className="typeform-widget"
+        data-tf-widget="nzvKGr9l"
+        data-tf-iframe-props="title=Contact Me"
+        data-tf-medium="snippet"
+      ></div>
       <style jsx>{`
-        .iFrame {
+        .typeform-widget {
           top: 0;
           right: 0;
-          width: 40vw;
+          width: ${mobile ? "100vw" : "40vw"};
           height: 100vh;
 
           border: none;

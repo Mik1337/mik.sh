@@ -20,6 +20,7 @@ const Home = () => {
         <title>mik.sh</title>
         <meta name="description" content="mik.sh" />
         <link rel="shortcut icon" width="60px" href="/fav.png" />
+        <script src="//embed.typeform.com/next/embed.js"></script>
       </Head>
 
       {/* split into 4 sections vertically */}
