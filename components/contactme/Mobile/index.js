@@ -4,7 +4,7 @@
 
 import React from "react";
 
-export default function ContactForm() {
+export default function ContactFormMobile() {
   // load the contact form
 
   return (
@@ -17,9 +17,8 @@ export default function ContactForm() {
         .iFrame {
           top: 0;
           right: 0;
-          width: 40vw;
+          width: 100vw;
           height: 100vh;
-
           border: none;
         }
       `}</style>

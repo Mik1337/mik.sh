@@ -5,7 +5,10 @@ import RightImagePanel from "components/rightimagepanel";
 // import AboutMe from "components/aboutme";
 import TopContainer from "containers/TopContainer";
 import Contactme from "components/contactme";
+import ContactMeMobile from "components/contactme/Mobile";
 import BottonContainer from "containers/BottomContainer";
+import WhoIsMobile from "components/whois/mobile";
+import MobileContainer from "containers/mobile/MobileTopContainer";
 
 const MobileWrapper = (props) => <Responsive {...props} maxWidth={575} />;
 const TabletUpWrapper = (props) => <Responsive {...props} minWidth={576} />;
@@ -17,7 +20,6 @@ const Home = () => {
         <title>mik.sh</title>
         <meta name="description" content="mik.sh" />
         <link rel="shortcut icon" width="60px" href="/fav.png" />
-        {/* <script src="//embed.typeform.com/next/embed.js"></script> */}
       </Head>
 
       {/* split into 4 sections vertically */}
@@ -27,9 +29,6 @@ const Home = () => {
             <TopContainer backgroundImage="https://media.giphy.com/media/UYBDCJjwOd9Re/giphy.gif">
               <WhosIs left />
               <RightImagePanel right />
-              <MobileWrapper>
-                <WhosIs tag={"h4"} />
-              </MobileWrapper>
             </TopContainer>
           </div>
 
@@ -40,6 +39,13 @@ const Home = () => {
             </BottonContainer>
           </div>
         </TabletUpWrapper>
+        <MobileWrapper>
+          <MobileContainer>
+            <WhoIsMobile />
+            <div>hello world</div>
+            <ContactMeMobile />
+          </MobileContainer>
+        </MobileWrapper>
       </main>
       <style jsx>{`
         .firstContainer {
