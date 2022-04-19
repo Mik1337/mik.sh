@@ -2,7 +2,7 @@ import Head from "next/head";
 import WhosIs from "components/whois";
 import Responsive from "react-responsive";
 import RightImagePanel from "components/rightimagepanel";
-import AboutMe from "components/aboutme";
+// import AboutMe from "components/aboutme";
 import Container from "containers/Container";
 
 const MobileWrapper = (props) => <Responsive {...props} maxWidth={575} />;
