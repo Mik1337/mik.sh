@@ -9,6 +9,8 @@ import ContactMeMobile from "components/contactme/Mobile";
 import BottonContainer from "containers/BottomContainer";
 import WhoIsMobile from "components/whois/mobile";
 import MobileContainer from "containers/mobile/MobileTopContainer";
+// import Projects from "components/projects";
+import Footer from "components/footer";
 
 const MobileWrapper = (props) => <Responsive {...props} maxWidth={575} />;
 const TabletUpWrapper = (props) => <Responsive {...props} minWidth={576} />;
@@ -39,6 +41,10 @@ const Home = () => {
               <Contactme right />
             </BottonContainer>
           </div>
+
+          <div className="footer">
+            <Footer />
+          </div>
         </TabletUpWrapper>
         <MobileWrapper>
           <MobileContainer>
@@ -61,7 +67,7 @@ const Home = () => {
           background-repeat: no-repeat;
           background-size: cover;
         }
-        
+
         .secondContainer {
           /* window size */
           width: 100%;
@@ -74,6 +80,19 @@ const Home = () => {
           background-repeat: no-repeat;
           background-size: cover;
         }
+
+        // cat shooting lazers from it's eyes
+        // https://media.giphy.com/media/ArAgo5dU2z2xO/giphy.gif
+
+        .footer {
+          /* window size */
+          width: 100%;
+          height: 15vh;
+          background-image: url(https://media.giphy.com/media/d1G6qsjTJcHYhzxu/giphy.gif);
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
         }
       `}</style>
     </div>
