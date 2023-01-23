@@ -34,7 +34,7 @@ Sep 2020 - Jul 2022 · 1 yr 11 months
     <img title="website" src="https://cdn.svgporn.com/logos/safari.svg" width="24" alt="website" />
 </a>
 
-Tools I worked with here
+As a multifaceted team member, I played a crucial role in advancing the mission and impact of the organization. My responsibilities included conducting research for conferences, implementing marketing automation software such as hubspot, and organizing community events. I also collaborated closely with the tech team to provide comprehensive and efficient technical support across the organization. My role required a strong set of skills in research, analysis, organization, and technology. The contributions I made to the organization were meaningful and my experience was invaluable, helping me to deepen my understanding of the community, the organization's goals, and the crucial role that technology plays in achieving them.
 
 AWS Lambda · Amazon S3 · Amazon Redshift · HubSpot
 
@@ -46,9 +46,7 @@ Jul 2019 - Nov 2019 · 5 months
 <img title="Linkedin" src="https://cdn.svgporn.com/logos/linkedin-icon.svg" alt="Linkedin" width="24" />
 </a>
 
-Worked as a point of contact between the client and the internal team, building an analytic dashboard using reactjs, nextjs, Apollo GraphQL and PostgreSQL.
-
-I also worked on maintaining the DBMS and acted as support for the front end team. I also worked on maintaining the DBMS and acted as support for the front end team.
+As a key point of contact, I effectively facilitated communication and collaboration between the client and internal team. Utilizing my expertise in web development and data management, I developed an analytical dashboard that streamlined data analysis. In addition to building the dashboard, I also played an instrumental role in maintaining the database and providing front-end support.
 
 Tools I worked with here
 
