@@ -1,15 +1,15 @@
 # Work Experience
 
-### WKND inc.
+## WKND inc.
 
-<a href="https://www.linkedin.com/company/the-nudge-institute/"  alt="Linkedin">
-    <img title="Linkedin" src="https://cdn.svgporn.com/logos/linkedin-icon.svg" alt="Linkedin" width="24" />
+<a href="https://www.linkedin.com/company/the-nudge-institute/" alt="Linkedin" target="_blank">
+<img title="Linkedin" src="https://cdn.svgporn.com/logos/linkedin-icon.svg" alt="Linkedin" width="24" />
 </a>
-<a href="https://wknd.com" >
-    <img title="website" src="https://cdn.svgporn.com/logos/safari.svg" alt="website" width="24" />
+<a href="https://wknd.com" target="_blank">
+<img title="website" src="https://cdn.svgporn.com/logos/safari.svg" alt="website" width="24" />
 </a>
 
-Current </br>
+Current
 
 - Lead Software Engineer
   Jun 2022 - Present · 8 mosJun 2022 - Present · 8 mos
@@ -18,26 +18,29 @@ Current </br>
   Dec 2020 - Present · 2 yrs 2 mos
 
 Tools I use here:
+
 NestJS · React Native · TypeScript · ReTool · Stripe · Node.js · PostgreSQL · AWS Elastic Beanstalk
 
-### The/Nudge Institute
+## The/Nudge Institute
 
 Sep 2020 - Jul 2022 · 1 yr 11 months
 
-<a href="https://www.linkedin.com/company/the-nudge-institute/" >
+<a href="https://www.linkedin.com/company/the-nudge-institute/" target="_blank">
     <img title="Linkedin" src="https://cdn.svgporn.com/logos/linkedin-icon.svg"  alt="Linkedin" width="24" />
 </a>
-<a href="https://thenudge.org/"  >
+<a href="https://thenudge.org/" target="_blank">
     <img title="website" src="https://cdn.svgporn.com/logos/safari.svg" width="24" alt="website" />
 </a>
 
 Tools I worked with here
-AWS Lambda · Amazon S3 · Amazon Redshift · AWS Lambda · Amazon S3 · Amazon Redshift · HubSpot
 
-### Fanlytiks
+AWS Lambda · Amazon S3 · Amazon Redshift · HubSpot
+
+## Fanlytiks
 
 Jul 2019 - Nov 2019 · 5 months
-<a href="https://www.linkedin.com/company/fanlytiks/" >
+
+<a href="https://www.linkedin.com/company/fanlytiks/" target="_blank">
 <img title="Linkedin" src="https://cdn.svgporn.com/logos/linkedin-icon.svg" alt="Linkedin" width="24" />
 </a>
 
@@ -46,16 +49,20 @@ Worked as a point of contact between the client and the internal team, building 
 I also worked on maintaining the DBMS and acted as support for the front end team. I also worked on maintaining the DBMS and acted as support for the front end team.
 
 Tools I worked with here
+
 Next.js · Node.js · Apollo GraphQL · PostgreSQL
 
 # Social Media
 
-<a href="https://github.com/Mik1337">
-<img title="Linkedin" src="https://cdn.svgporn.com/logos/github-icon.svg" alt="Linkedin"  width="24" />
-</a> ·
-<a href="https://cdn.svgporn.com/logos/twitter.svg">
-<img title="Twitter" src="https://cdn.svgporn.com/logos/twitter.svg" alt="Twitter"  width="24" />
-</a> ·
-<a href="https://hachyderm.io/@mik">
-<img title="Mastodon" src="https://cdn.svgporn.com/logos/mastodon-icon.svg" alt="mastodon" width="24" />
+<a href="https://github.com/Mik1337" target="_blank">
+<img title="Linkedin" src="https://cdn.svgporn.com/logos/github-icon.svg" alt="GitHub"  width="24" style="display: block; margin: auto;" />
+</a>
+<a href="https://cdn.svgporn.com/logos/twitter.svg"t arget="_blank">
+<img title="Twitter" src="https://cdn.svgporn.com/logos/twitter.svg" alt="Twitter"  width="24" style="display: block; margin: auto;" />
+</a>
+<a href="https://www.linkedin.com/in/santosh%EF%BE%82/" target="_blank">
+<img title="Mastodon" src="https://cdn.svgporn.com/logos/linkedin-icon.svg" alt="Linkedin" width="24" style="display: block; margin: auto;" />
+</a>
+<a href="https://hachyderm.io/@mik" target="_blank">
+<img title="Mastodon" src="https://cdn.svgporn.com/logos/mastodon-icon.svg" alt="mastodon" width="24" style="display: block; margin: auto;"/>
 </a>
