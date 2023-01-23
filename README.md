@@ -56,13 +56,13 @@ Next.js · Node.js · Apollo GraphQL · PostgreSQL
 
 <a href="https://github.com/Mik1337" target="_blank">
 <img title="Linkedin" src="https://cdn.svgporn.com/logos/github-icon.svg" alt="GitHub"  width="24" style="display: block; margin: auto;" />
-</a>
-<a href="https://cdn.svgporn.com/logos/twitter.svg"t arget="_blank">
+</a> ·
+<a href="https://cdn.svgporn.com/logos/twitter.svg" target="_blank">
 <img title="Twitter" src="https://cdn.svgporn.com/logos/twitter.svg" alt="Twitter"  width="24" style="display: block; margin: auto;" />
-</a>
+</a> ·
 <a href="https://www.linkedin.com/in/santosh%EF%BE%82/" target="_blank">
 <img title="Mastodon" src="https://cdn.svgporn.com/logos/linkedin-icon.svg" alt="Linkedin" width="24" style="display: block; margin: auto;" />
-</a>
+</a> ·
 <a href="https://hachyderm.io/@mik" target="_blank">
 <img title="Mastodon" src="https://cdn.svgporn.com/logos/mastodon-icon.svg" alt="mastodon" width="24" style="display: block; margin: auto;"/>
 </a>
