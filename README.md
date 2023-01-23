@@ -1,7 +1,3 @@
-# mik.sh
-
-henlo, I'm Mik!
-
 # Work Experience
 
 ### Fanlytiks
