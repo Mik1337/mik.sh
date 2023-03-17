@@ -1,11 +1,27 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="{{ site.lang | default: 'en-US' }}">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>mik.sh</title>
     <meta name="description" content="mik.sh's personal website">
+
+    <meta property="og:title" content="mik.sh" key="og:title" />
+    <meta name="og:description" content="mik.sh's personal website">
+    <meta name="og:image" content="https://mik.sh/assets/img/IMG_4041.jpg">
+    <meta name="og:url" content="https://mik.sh">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@AvocadoMik">
+    <meta name="twitter:creator" content="@AvocadoMik">
+    <meta name="twitter:title" content="mik.sh">
+    <meta name="twitter:description" content="mik.sh's personal website">
+    <meta name="twitter:image" content="https://mik.sh/assets/img/IMG_4041.jpg">
+    <meta name="twitter:image:alt" content="mik.sh's personal website">
+    <meta name="twitter:domain" content="mik.sh">
+    <meta name="twitter:app:name:iphone" content="mik.sh">
+    <meta name="twitter:app:name:ipad" content="mik.sh">
+    
     {% seo %}
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
     <!--[if lt IE 9]>
