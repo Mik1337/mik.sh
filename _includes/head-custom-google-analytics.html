@@ -1,11 +1,16 @@
 {% if site.google_analytics %}
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0XY0XBL7FZ"></script>
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-0XY0XBL7FZ"
+></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
 
-  gtag('config', '{{ site.google_analytics }}');
+  gtag("config", "{{ site.google_analytics }}");
 </script>
-<script{% endif %}
+{% endif %}
