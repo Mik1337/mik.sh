@@ -4,6 +4,7 @@ plugins:
 title: mik.sh
 description: Henlo, I'm mik; I'm a programmer, a maker, a hacker and a lot of other things. This is my website.
 logo: /assets/img/IMG_4041.jpg
+favicon: /assets/img/mi_hiragana.png
 google_analytics: G-0XY0XBL7FZ
 root_address: https://mik.sh
 linkedin:
