@@ -1,5 +1,22 @@
 # Work Experience
 
+## North Of Zero
+
+Current
+
+<a href="https://www.linkedin.com/company/north-of-zero/" alt="Linkedin" target="_blank" style="padding-right:5px">
+<img title="Linkedin" src="https://cdn.svgporn.com/logos/linkedin-icon.svg" alt="Linkedin" width="24" />
+</a>
+<a href="https://northofzero.dev/" target="_blank">
+<img title="website" src="https://cdn.svgporn.com/logos/safari.svg" alt="website" width="24" />
+</a>
+
+## Designer
+
+Part-time Jul 2023 - Present
+
+Skills: Figma (Software) · React.js
+
 ## WKND inc.
 
 Current
@@ -15,11 +32,18 @@ Current
 
 Jun 2022 - Present
 
+Overseeing the development / implementation\* Overseeing the development / implementation
+
 ### Full Stack Developer
 
 Dec 2020 - Jun 2022 · 2 yrs 7 months
 
-Tools I use here:
+- Migrating CSR React.js project to NextJS
+- React Native App Development (iOS & Android)
+- Basic DevOps (Github Actions / AWS Elastic Beanstalk)
+- Rest APIs / Database (Nestjs)_ Migrating CSR React.js project to NextJS _ React Native App Development (iOS & Android) _ Basic DevOps (Github Actions / AWS Elastic Beanstalk) _ Rest APIs / Database (Nestjs)
+
+  Skills: github actions · Node.js · TypeScript · Stripe Connect · NestJS · retool · PostgreSQL · React Native · AWS Elastic Beanstalk · Next.js
 
 NestJS · React Native · TypeScript · ReTool · Stripe · Node.js · PostgreSQL · AWS Elastic Beanstalk
 
@@ -34,9 +58,13 @@ Sep 2020 - Jul 2022 · 1 yr 11 months
     <img title="website" src="https://cdn.svgporn.com/logos/safari.svg" width="24" alt="website" />
 </a>
 
-As a multifaceted team member, I played a crucial role in advancing the mission and impact of the organization. My responsibilities included conducting research for conferences, implementing marketing automation software such as hubspot, and organizing community events. I also collaborated closely with the tech team to provide comprehensive and efficient technical support across the organization. My role required a strong set of skills in research, analysis, organization, and technology. The contributions I made to the organization were meaningful and my experience was invaluable, helping me to deepen my understanding of the community, the organization's goals, and the crucial role that technology plays in achieving them.
+- Research for conferences
+- Implementing marketing automation software
+- Organizing community events.
+- Technical support across the organization.
+- Data Analysis / Research* Research for conferences * Implementing marketing automation software _ Organizing community events. _ Technical support across the organization. \* Data Analysis / Research
 
-AWS Lambda · Amazon S3 · Amazon Redshift · HubSpot
+Skills: Amazon S3 · Amazon Redshift · AWS Lambda · HubSpot · Process Improvement
 
 ## Fanlytiks
 
@@ -46,10 +74,11 @@ Jul 2019 - Nov 2019 · 5 months
 <img title="Linkedin" src="https://cdn.svgporn.com/logos/linkedin-icon.svg" alt="Linkedin" width="24" />
 </a>
 
-As a key point of contact, I effectively facilitated communication and collaboration between the client and internal team. Utilizing my expertise in web development and data management, I developed an analytical dashboard that streamlined data analysis. In addition to building the dashboard, I also played an instrumental role in maintaining the database and providing front-end support.
+- Point of Contact for the Client <> Product Team for building their Sports Analytics Dashboard.
+- GraphQL APIs (Apollo GraphQL)
+- Database Maintenance (Postgres, minor updates)
+- Frontend help (React.js / Next.js)_ Point of Contact for the Client <> Product Team for building their Sports Analytics Dashboard. _ GraphQL APIs (Apollo GraphQL) _ Database Maintenance (Postgres, minor updates) _ Frontend help (React.js / Next.js)
 
-Tools I worked with here
-
-Next.js · Node.js · Apollo GraphQL · PostgreSQL
+Skills: Node.js · Apollo GraphQL · PostgreSQL · Next.js
 
 <!-- # Social Media -->
