@@ -41,11 +41,12 @@ Dec 2020 - Jun 2022 · 2 yrs 7 months
 - Migrating CSR React.js project to NextJS
 - React Native App Development (iOS & Android)
 - Basic DevOps (Github Actions / AWS Elastic Beanstalk)
-- Rest APIs / Database (Nestjs)_ Migrating CSR React.js project to NextJS _ React Native App Development (iOS & Android) _ Basic DevOps (Github Actions / AWS Elastic Beanstalk) _ Rest APIs / Database (Nestjs)
+- Rest APIs / Database (Nestjs)_ Migrating CSR React.js project to NextJS
+  - React Native App Development (iOS & Android)
+  - Basic DevOps (Github Actions / AWS Elastic Beanstalk)
+  - Rest APIs / Database (Nestjs)
 
-  Skills: github actions · Node.js · TypeScript · Stripe Connect · NestJS · retool · PostgreSQL · React Native · AWS Elastic Beanstalk · Next.js
-
-NestJS · React Native · TypeScript · ReTool · Stripe · Node.js · PostgreSQL · AWS Elastic Beanstalk
+Skills: github actions · Node.js · TypeScript · Stripe Connect · NestJS · retool · PostgreSQL · React Native · AWS Elastic Beanstalk · Next.js
 
 ## The/Nudge Institute
 
@@ -62,7 +63,11 @@ Sep 2020 - Jul 2022 · 1 yr 11 months
 - Implementing marketing automation software
 - Organizing community events.
 - Technical support across the organization.
-- Data Analysis / Research* Research for conferences * Implementing marketing automation software _ Organizing community events. _ Technical support across the organization. \* Data Analysis / Research
+- Data Analysis / Research* Research for conferences
+  - Implementing marketing automation software
+  - Organizing community events.
+  - Technical support across the organization.
+  - Data Analysis / Research
 
 Skills: Amazon S3 · Amazon Redshift · AWS Lambda · HubSpot · Process Improvement
 
@@ -77,7 +82,11 @@ Jul 2019 - Nov 2019 · 5 months
 - Point of Contact for the Client <> Product Team for building their Sports Analytics Dashboard.
 - GraphQL APIs (Apollo GraphQL)
 - Database Maintenance (Postgres, minor updates)
-- Frontend help (React.js / Next.js)_ Point of Contact for the Client <> Product Team for building their Sports Analytics Dashboard. _ GraphQL APIs (Apollo GraphQL) _ Database Maintenance (Postgres, minor updates) _ Frontend help (React.js / Next.js)
+- Frontend help (React.js / Next.js)
+- Point of Contact for the Client <> Product Team for building their Sports Analytics Dashboard.
+- GraphQL APIs (Apollo GraphQL)
+- Database Maintenance (Postgres)
+- Frontend help (React.js / Next.js)
 
 Skills: Node.js · Apollo GraphQL · PostgreSQL · Next.js
 
