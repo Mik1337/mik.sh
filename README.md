@@ -32,7 +32,7 @@ Current
 
 Jun 2022 - Present
 
-Overseeing the development / implementation\* Overseeing the development / implementation
+Overseeing the development / implementation
 
 ### Full Stack Developer
 
