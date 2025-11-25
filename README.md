@@ -1,5 +1,17 @@
 # Work Experience
 
+## [Unmute](https://www.unmute.now)
+
+Current - Co Founder
+
+<a href="[https://www.linkedin.com/company/north-of-zero/](https://www.linkedin.com/company/unmutenow)" alt="Linkedin" target="_blank" style="padding-right:5px">
+<img title="Linkedin" src="https://cdn.svgporn.com/logos/linkedin-icon.svg" alt="Linkedin" width="24" />
+</a>
+<a href="https://unmute.now" target="_blank">
+<img title="website" src="https://cdn.svgporn.com/logos/safari.svg" alt="website" width="24" />
+</a>
+
+
 ## [North Of Zero](https://www.northofzero.dev)
 
 Current
