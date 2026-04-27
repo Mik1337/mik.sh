@@ -1,0 +1,204 @@
+@import "tailwindcss";
+
+/* Self-host fonts from the `geist` package (its JS entrypoints require next/font). */
+@font-face {
+  font-family: "Geist Sans";
+  src: url("../node_modules/geist/dist/fonts/geist-sans/Geist-Variable.woff2")
+    format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist Mono";
+  src: url("../node_modules/geist/dist/fonts/geist-mono/GeistMono-Variable.woff2")
+    format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist Pixel Square";
+  src: url("../node_modules/geist/dist/fonts/geist-pixel/GeistPixel-Square.woff2")
+    format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist Pixel Grid";
+  src: url("../node_modules/geist/dist/fonts/geist-pixel/GeistPixel-Grid.woff2")
+    format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist Pixel Circle";
+  src: url("../node_modules/geist/dist/fonts/geist-pixel/GeistPixel-Circle.woff2")
+    format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist Pixel Triangle";
+  src: url("../node_modules/geist/dist/fonts/geist-pixel/GeistPixel-Triangle.woff2")
+    format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist Pixel Line";
+  src: url("../node_modules/geist/dist/fonts/geist-pixel/GeistPixel-Line.woff2")
+    format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-pixel-square: var(--font-geist-pixel-square);
+  --font-pixel-grid: var(--font-geist-pixel-grid);
+  --font-pixel-circle: var(--font-geist-pixel-circle);
+  --font-pixel-triangle: var(--font-geist-pixel-triangle);
+  --font-pixel-line: var(--font-geist-pixel-line);
+
+  --animate-blink: blink 1s step-start infinite;
+}
+
+:root {
+  --font-geist-sans: "Geist Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-geist-mono:
+    "Geist Mono", ui-monospace, "SFMono-Regular", "Roboto Mono", menlo, monaco,
+    "Liberation Mono", "DejaVu Sans Mono", "Courier New", monospace;
+  --font-geist-pixel-square:
+    "Geist Pixel Square", "Geist Mono", ui-monospace, "SFMono-Regular",
+    "Roboto Mono", menlo, monaco, "Liberation Mono", "DejaVu Sans Mono",
+    "Courier New", monospace;
+  --font-geist-pixel-grid:
+    "Geist Pixel Grid", "Geist Mono", ui-monospace, "SFMono-Regular",
+    "Roboto Mono", menlo, monaco, "Liberation Mono", "DejaVu Sans Mono",
+    "Courier New", monospace;
+  --font-geist-pixel-circle:
+    "Geist Pixel Circle", "Geist Mono", ui-monospace, "SFMono-Regular",
+    "Roboto Mono", menlo, monaco, "Liberation Mono", "DejaVu Sans Mono",
+    "Courier New", monospace;
+  --font-geist-pixel-triangle:
+    "Geist Pixel Triangle", "Geist Mono", ui-monospace, "SFMono-Regular",
+    "Roboto Mono", menlo, monaco, "Liberation Mono", "DejaVu Sans Mono",
+    "Courier New", monospace;
+  --font-geist-pixel-line:
+    "Geist Pixel Line", "Geist Mono", ui-monospace, "SFMono-Regular",
+    "Roboto Mono", menlo, monaco, "Liberation Mono", "DejaVu Sans Mono",
+    "Courier New", monospace;
+
+  --text: light-dark(var(--text-h), var(--text));
+  --text-h: light-dark(#08060d, #d5d8dbf5);
+  --bg: light-dark(#fff, #161d27);
+  --border: light-dark(#e5e4e7, #2e303a);
+  --code-bg: light-dark(#f4f3ec, #1f2028);
+  --accent: light-dark(#aa3bff, #c084fc);
+  --accent-bg: light-dark(rgba(170, 59, 255, 0.1), rgba(170, 59, 255, 0.15));
+  --accent-border: light-dark(
+    rgba(170, 59, 255, 0.5),
+    rgba(170, 59, 255, 0.75)
+  );
+  --social-bg: light-dark(rgba(244, 243, 236, 0.5), rgba(47, 48, 58, 0.5));
+  --shadow: light-dark(
+    rgba(0, 0, 0, 0.1) 0 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0 4px 6px -2px
+  );
+
+  color-scheme: light dark;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+body {
+  min-height: 100vh;
+  background-color: transparent;
+  color: var(--text);
+  font-family: var(--font-geist-sans);
+  line-height: 1.6;
+  text-wrap: pretty;
+  overflow-x: clip;
+  transition:
+    color 400ms ease,
+    background-color 400ms ease;
+
+  background-color: var(--accent);
+}
+
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  inset: -8rem;
+  z-index: 0;
+  pointer-events: none;
+}
+
+body::before {
+  opacity: 0.5;
+  background:
+    linear-gradient(
+      90deg,
+      transparent 0 16%,
+      #4b607c21 16% 25%,
+      transparent 25% 44%,
+      #e86a5212 44% 44.8%,
+      transparent 44.8% 66%,
+      #d5d8db0b 66% 66.35%,
+      transparent 66.35% 100%
+    ),
+    linear-gradient(
+      0deg,
+      transparent 0 20%,
+      #8f322238 20% 21.2%,
+      transparent 21.2% 49%,
+      #4b607c1c 49% 57%,
+      transparent 57% 78%,
+      #d5d8db0a 78% 78.35%,
+      transparent 78.35% 100%
+    ),
+    linear-gradient(90deg, #d5d8db07 1px, transparent 1px),
+    linear-gradient(0deg, #d5d8db06 1px, transparent 1px), #161d27;
+  background-size:
+    34rem 34rem,
+    34rem 34rem,
+    4.25rem 4.25rem,
+    4.25rem 4.25rem,
+    auto;
+}
+
+body::after {
+  opacity: 1;
+  background: linear-gradient(to bottom, #0d11161f, #161d27 90%);
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
