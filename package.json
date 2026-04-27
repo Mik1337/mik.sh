@@ -16,10 +16,12 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.2.4",
+    "clsx": "^2.1.1",
     "geist": "^1.7.0",
     "motion": "^12.38.0",
     "react": "^19.2.5",
     "react-dom": "^19.2.5",
+    "tailwind-merge": "^3.5.0",
     "tailwindcss": "^4.2.4"
   },
   "devDependencies": {

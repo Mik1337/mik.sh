@@ -107,8 +107,8 @@
   --bg: light-dark(#fff, #161d27);
   --border: light-dark(#e5e4e7, #2e303a);
   --code-bg: light-dark(#f4f3ec, #1f2028);
-  --accent: light-dark(#aa3bff, #c084fc);
-  --accent-bg: light-dark(rgba(170, 59, 255, 0.1), rgba(170, 59, 255, 0.15));
+  --accent: light-dark(#aa3bff, #8926ec);
+  --accent-bg: light-dark(rgba(175, 80, 247, 0.1), rgba(170, 59, 255, 0.15));
   --accent-border: light-dark(
     rgba(170, 59, 255, 0.5),
     rgba(170, 59, 255, 0.75)
