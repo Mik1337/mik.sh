@@ -21,7 +21,7 @@ export default function App() {
   return (
     <>
       <ReactLenis root options={lenisOptions} />
-      <main className="flex relative flex-col items-center justify-center">
+      <main className="flex relative flex-col items-center justify-center pb-40">
         <Hero />
         <Projects />
         <Nav />

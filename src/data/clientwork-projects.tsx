@@ -9,101 +9,61 @@ export type ClientWorkProject = {
   /** Single line, max 200 characters. */
   description: string;
   media: string[];
+  fill: string & {};
 };
-
-const zencureDemoVideos = [
-  "https://www.northofzero.dev/work/zencure/videos/booking.mp4#t=0.001",
-  "https://www.northofzero.dev/work/zencure/videos/Repeat%20Bookings.mp4#t=0.001",
-  "https://www.northofzero.dev/work/zencure/videos/Custom%20Appointments.mp4#t=0.001",
-  "https://www.northofzero.dev/work/zencure/videos/usingzencure.mp4#t=0.001",
-] as const;
-
-export const zencureDemoVideoUrls: readonly string[] = [
-  ...new Set(zencureDemoVideos),
-];
-
-/** “Other projects” in clientwork.txt: two lines per card (link/name, then blurb). Happy Hours is one card: name, two URLs, then “Cocktail recipes app”. */
-export const personalProjects: ClientWorkProject[] = [
-  {
-    id: "shruthinishad",
-    title: "shruthinishad.com",
-    description:
-      "Website for a chef working in the best restaurant in the city",
-    media: [],
-  },
-  {
-    id: "kind-mind",
-    title: "Kind Mind Therapy",
-    description: "Website for a therapist",
-    media: [],
-  },
-  {
-    id: "fun-mik-sh",
-    title: "fun.mik.sh",
-    description: "My chaotic website",
-    media: [],
-  },
-  {
-    id: "whack-a-key",
-    title: "WHCK",
-    description: "A game, inspired by tetris and osu",
-    media: [],
-  },
-  {
-    id: "happy-hours",
-    title: "Happy Hours",
-    description: "A curated cocktail recipes app",
-    media: [],
-  },
-];
 
 const professionalProjects: ClientWorkProject[] = [
   {
     id: "zencure",
-    title: "Zencure (2024)",
+    title: "Zencure",
     description: "HIPPA compliant doctor patient management software",
     media: [],
+    fill: "#485C00",
   },
   {
     id: "nudge-iaf",
     title: "the/nudge IAF",
     description: "social entrepreneurship",
     media: [],
+    fill: "#3F251D",
   },
   {
     id: "nudge-social",
     title: "the/nudge institute",
     description: "social entrepreneurship",
     media: [],
+    fill: "#3F251D",
   },
   {
-    id: "founders-playbook",
-    title: "Founders Playbook",
-    description: "Founder-facing tools, blog, tips, and perks. Docusaurus.",
+    id: "delta-social",
+    title: "the^delta",
+    description: "social entrepreneurship",
     media: [],
+    fill: "#550707",
   },
   {
     id: "unmute",
     title: "Unmute",
     description: "Anonymous workplace reporting",
     media: [],
+    fill: "#5C4D00",
   },
   {
     id: "floxx",
     title: "Floxx",
-    description:
-      "Framer plugin for a custom dropshipping storefront in minutes. Next.js (App), Supabase, Framer plugin starter.",
+    description: "Framer plugin for a custom dropshipping storefront",
     media: [],
+    fill: "#003C5C",
   },
   {
-    id: "delta",
-    title: "the^delta",
-    description: "social entrepreneurship",
+    id: "freelance",
+    title: "Freelance Work",
+    description: "",
     media: [],
+    fill: "#3A2B3C",
   },
 ];
 
 export const clientWorkProjects: ClientWorkProject[] = [
   ...professionalProjects,
-  ...personalProjects,
 ];

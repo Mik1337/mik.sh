@@ -2,7 +2,7 @@ import type { ClassValue } from "clsx";
 
 interface FolderBgProps {
   className?: string & ClassValue;
-  fill: string;
+  fill: string & {};
 }
 
 export default function FolderBg({ className, fill }: FolderBgProps) {

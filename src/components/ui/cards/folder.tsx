@@ -6,11 +6,17 @@ import { motion, useReducedMotion } from "motion/react";
 interface FolderProps {
   title: string;
   description: string;
-  media: string[];
+  media: string[]; // static image URLs only
+  fill: string & {};
   className?: string & ClassValue;
 }
 
-export default function Folder({ title, description, className }: FolderProps) {
+export default function Folder({
+  title,
+  description,
+  fill,
+  className,
+}: FolderProps) {
   const reduceMotion = useReducedMotion();
 
   return (
@@ -20,14 +26,13 @@ export default function Folder({ title, description, className }: FolderProps) {
         className,
       )}
     >
-      <FolderBg fill="#485C00" />
+      <FolderBg fill={fill} />
       <motion.div
         initial="rest"
         whileHover="hover"
         style={{ transformStyle: "preserve-3d", transformOrigin: "0% 80%" }}
         variants={{
           rest: {
-            opacity: 0.2,
             z: 0,
             rotateX: 0,
             transition: { duration: 0.1 },
@@ -40,13 +45,13 @@ export default function Folder({ title, description, className }: FolderProps) {
                 transition: { duration: 0.2, ease: [0.22, 1, 0.36, 1] },
               },
         }}
-        className="bg-[#FEFEBD] border border-amber-400/40 absolute bottom-[1.25px] left-0 right-0 rounded-[14.21px] h-[166.13px]"
+        className={`border-0.5 border-[${fill}]/40 bg-[#FEFEBD]/20 backdrop-blur-sm absolute bottom-[1.25px] left-0 right-0 rounded-[14.21px] h-[166.13px]`}
       >
-        <div className="h-full relative">
-          <h2 className="text-xl font-bold opacity-80 text-center absolute top-[40%] left-0 right-0">
+        <div className="h-full relative mix-blend-plus-overlay text-white/80">
+          <h2 className="text-xl font-bold  text-center absolute top-[40%] left-0 right-0">
             {title}
           </h2>
-          <p className="text-sm opacity-80 text-center absolute bottom-[10%] left-0 right-0">
+          <p className="text-sm text-center absolute bottom-[10%] left-0 right-0">
             {description}
           </p>
         </div>

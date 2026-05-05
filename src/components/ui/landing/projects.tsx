@@ -15,13 +15,14 @@ export default function Projects() {
           Stuff I've built, in no particular order.
         </p>
       </hgroup>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-2 w-full items-stretch justify-start">
+      <div className="grid grid-cols-1 pt-8 md:grid-cols-3 gap-x-4 gap-y-8 mx-auto max-w-4xl w-full items-stretch justify-start">
         {clientWorkProjects.map((project) => (
           <Folder
             key={project.id}
             title={project.title}
             description={project.description}
             media={project.media}
+            fill={project.fill}
           />
         ))}
       </div>
