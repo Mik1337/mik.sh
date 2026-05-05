@@ -12,7 +12,7 @@ export default function Nav() {
         duration: reduceMotion ? 0 : 0.5,
         delay: reduceMotion ? 0 : 0.5,
       }}
-      className="flex gap-4 z-2 px-8 py-2.5 border border-amber-400/40 bg-amber-400/20  items-center justify-center min-w-0 w-fit max-w-screen-sm  backdrop-blur-sm absolute bottom-0 left-0 right-0 mb-4 mx-auto"
+      className="flex gap-4 z-2 px-8 py-2.5 border border-amber-400/40 bg-amber-400/20  items-center justify-center min-w-0 w-fit max-w-screen-sm  backdrop-blur-sm fixed bottom-0 left-0 right-0 mb-4 mx-auto"
     >
       <Link href="/">Home</Link>
       <Link href="#snippets">Snippets</Link>

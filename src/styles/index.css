@@ -1,68 +1,6 @@
+@import url(./fonts.css);
 @import "tailwindcss";
-
-/* Self-host fonts from the `geist` package (its JS entrypoints require next/font). */
-@font-face {
-  font-family: "Geist Sans";
-  src: url("../node_modules/geist/dist/fonts/geist-sans/Geist-Variable.woff2")
-    format("woff2");
-  font-weight: 100 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Geist Mono";
-  src: url("../node_modules/geist/dist/fonts/geist-mono/GeistMono-Variable.woff2")
-    format("woff2");
-  font-weight: 100 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Geist Pixel Square";
-  src: url("../node_modules/geist/dist/fonts/geist-pixel/GeistPixel-Square.woff2")
-    format("woff2");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Geist Pixel Grid";
-  src: url("../node_modules/geist/dist/fonts/geist-pixel/GeistPixel-Grid.woff2")
-    format("woff2");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Geist Pixel Circle";
-  src: url("../node_modules/geist/dist/fonts/geist-pixel/GeistPixel-Circle.woff2")
-    format("woff2");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Geist Pixel Triangle";
-  src: url("../node_modules/geist/dist/fonts/geist-pixel/GeistPixel-Triangle.woff2")
-    format("woff2");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Geist Pixel Line";
-  src: url("../node_modules/geist/dist/fonts/geist-pixel/GeistPixel-Line.woff2")
-    format("woff2");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
+@import "lenis/dist/lenis.css";
 
 @theme {
   --font-sans: var(--font-geist-sans);
@@ -130,11 +68,14 @@
   @media (max-width: 1024px) {
     font-size: 16px;
   }
+
+  /* Room for fixed bottom nav when jumping to #anchors */
+  scroll-padding-bottom: 5.5rem;
 }
 
 body {
   min-height: 100vh;
-  background-color: transparent;
+  background-color: var(--bg);
   color: var(--text);
   font-family: var(--font-geist-sans);
   line-height: 1.6;
@@ -143,20 +84,30 @@ body {
   transition:
     color 400ms ease,
     background-color 400ms ease;
+}
 
+.hero-bg {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
   background-color: var(--accent);
 }
 
-body::before,
-body::after {
+.hero-bg > * {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-bg::before,
+.hero-bg::after {
   content: "";
-  position: fixed;
-  inset: -8rem;
+  position: absolute;
+  inset: 0;
   z-index: 0;
   pointer-events: none;
 }
 
-body::before {
+.hero-bg::before {
   opacity: 0.5;
   background:
     linear-gradient(
@@ -189,7 +140,7 @@ body::before {
     auto;
 }
 
-body::after {
+.hero-bg::after {
   opacity: 1;
   background: linear-gradient(to bottom, #0d11161f, #161d27 90%);
 }

@@ -4,7 +4,7 @@ export default function Hero() {
   const reduceMotion = useReducedMotion();
 
   return (
-    <section className="hero-bg flex min-h-svh gap-2  flex-col items-center z-2 justify-center">
+    <section className="hero-bg w-full relative flex min-h-svh flex-col items-center justify-center gap-2 z-2">
       <hgroup className="flex flex-col text-white drop-shadow-2xs opacity-80 items-center justify-center">
         <h1 className="text-7xl tracking-wide font-semibold p-0 m-0">MIK</h1>
         <h2 className="text-3xl tracking-tighter text-center -mt-2 font-bold p-0 m-0">
