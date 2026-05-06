@@ -22,7 +22,7 @@ export default function Folder({
   return (
     <div
       className={cn(
-        "w-fit h-[200px] relative perspective-[880px] transform-3d",
+        "w-fit cursor-default h-[200px] relative perspective-[880px] transform-3d",
         className,
       )}
     >
