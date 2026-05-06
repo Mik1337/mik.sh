@@ -17,13 +17,13 @@ export default function Nav() {
     >
       <Link href="/">Home</Link>
       <Separator />
-      <Link href="#snippets">
-        Snippets <ExternalLink size={16} />
-      </Link>
-      <Separator />
       <Link href="#projects">Projects</Link>
       <Separator />
       <Link href="#tools">Tools</Link>
+      <Separator />
+      <Link href="#snippets">
+        Snippets <ExternalLink size={16} />
+      </Link>
       <Separator />
       <Link href="#contact">Contact</Link>
     </motion.nav>

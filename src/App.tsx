@@ -4,6 +4,7 @@ import Hero from "./components/ui/landing/hero";
 import Nav from "./components/ui/nav";
 import Projects from "./components/ui/landing/projects";
 import { ReactLenis } from "lenis/react";
+import Tools from "./components/ui/landing/tools";
 
 export default function App() {
   const reduceMotion = useReducedMotion();
@@ -21,9 +22,10 @@ export default function App() {
   return (
     <>
       <ReactLenis root options={lenisOptions} />
-      <main className="flex relative flex-col items-center justify-center pb-40">
+      <main className="flex relative flex-col items-center justify-center gap-20 pb-40">
         <Hero />
         <Projects />
+        {/* <Tools /> */}
         <Nav />
       </main>
     </>
