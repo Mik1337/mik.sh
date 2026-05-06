@@ -36,6 +36,12 @@ export default function Projects() {
             fill={project.fill}
           />
         ))}
+        <Folder
+          title="Your +"
+          description="Interesting in working together?"
+          media={[]}
+          fill="#3F251D"
+        />
       </div>
     </section>
   );

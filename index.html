@@ -2,6 +2,25 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <script>
+      if (
+        window.location.hostname !== "localhost" &&
+        window.location.hostname !== "127.0.0.1" &&
+        window.location.hostname !== "::1"
+      ) {
+        const gtagScript = document.createElement("script");
+        gtagScript.async = true;
+        gtagScript.src =
+          "https://www.googletagmanager.com/gtag/js?id=G-0XY0XBL7FZ";
+        document.head.appendChild(gtagScript);
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+        gtag("config", "G-0XY0XBL7FZ");
+      }
+    </script>
     <link rel="icon" type="image/png" href="/mi_hiragana.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>mik.sh</title>
