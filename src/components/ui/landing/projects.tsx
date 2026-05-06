@@ -1,4 +1,5 @@
 import { clientWorkProjects } from "@/data/clientwork-projects";
+import { cn } from "@/utils";
 import Folder from "../cards/folder";
 
 export default function Projects() {
@@ -7,7 +8,7 @@ export default function Projects() {
       id="projects"
       className="max-w-7xl mx-auto projects-bg w-full relative flex min-h-svh flex-col items-center justify-start gap-2 z-2"
     >
-      <hgroup className="flex flex-col items-center justify-start gap-2">
+      <hgroup className="animate-title flex flex-col items-center justify-start gap-2">
         <h2 className="text-6xl text-center font-bold font-pixel-circle text-white opacity-80">
           Projects
         </h2>
@@ -15,7 +16,17 @@ export default function Projects() {
           Stuff I've built, in no particular order.
         </p>
       </hgroup>
-      <div className="grid grid-cols-1 pt-8 md:grid-cols-3 gap-x-4 gap-y-8 mx-auto max-w-4xl w-full items-stretch justify-start">
+      <div
+        className={cn(
+          "animate-items",
+          "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3",
+          "gap-4 sm:gap-x-4 sm:gap-y-8",
+          "px-4",
+          "pt-6 sm:pt-8",
+          "mx-auto max-w-4xl w-full",
+          "items-stretch justify-items-center",
+        )}
+      >
         {clientWorkProjects.map((project) => (
           <Folder
             key={project.id}

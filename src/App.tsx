@@ -4,7 +4,8 @@ import Hero from "./components/ui/landing/hero";
 import Nav from "./components/ui/nav";
 import Projects from "./components/ui/landing/projects";
 import { ReactLenis } from "lenis/react";
-import Tools from "./components/ui/landing/tools";
+// import Tools from "./components/ui/landing/tools";
+import { StaggerElements } from "./components/animation/staggger-elements";
 
 export default function App() {
   const reduceMotion = useReducedMotion();
@@ -22,6 +23,7 @@ export default function App() {
   return (
     <>
       <ReactLenis root options={lenisOptions} />
+      <StaggerElements />
       <main className="flex relative flex-col items-center justify-center gap-20 pb-40">
         <Hero />
         <Projects />
