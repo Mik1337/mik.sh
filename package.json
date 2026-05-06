@@ -12,6 +12,7 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
+    "deploy": "tsc -b && vite build && bunx wrangler pages deploy dist",
     "preview": "vite preview"
   },
   "dependencies": {
