@@ -13,7 +13,7 @@ export default function Hero() {
       </hgroup>
       <div className="flex relative items-center justify-start gap-2">
         <motion.p
-          className="text-xl inline-block font-pixel-square text-white opacity-90"
+          className="text-lg md:text-xl text-center inline-block font-pixel-square text-white opacity-90"
           initial={reduceMotion ? false : { clipPath: "inset(0 100% 0 0)" }}
           animate={{ clipPath: "inset(0 0% 0 0)" }}
           transition={{

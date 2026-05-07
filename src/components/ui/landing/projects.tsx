@@ -12,7 +12,7 @@ export default function Projects() {
         <h2 className="text-6xl text-center font-bold font-pixel-circle text-white opacity-80">
           Projects
         </h2>
-        <p className="text-lg text-left font-pixel-square text-white opacity-80">
+        <p className="text-lg text-center font-pixel-square text-white opacity-80">
           Stuff I've built, in no particular order.
         </p>
       </hgroup>
