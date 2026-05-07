@@ -1,35 +1,16 @@
-import { useMemo } from "react";
-import { useReducedMotion } from "motion/react";
-import Hero from "./components/ui/landing/hero";
-import Nav from "./components/ui/nav";
-import Projects from "./components/ui/landing/projects";
-import { ReactLenis } from "lenis/react";
-// import Tools from "./components/ui/landing/tools";
-import { StaggerElements } from "./components/animation/staggger-elements";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import IndexPage from "./components/pages/index";
+import ProjectPage from "./components/pages/project";
+import ProjectIdPage from "./components/pages/project-id";
 
 export default function App() {
-  const reduceMotion = useReducedMotion();
-
-  const lenisOptions = useMemo(
-    () => ({
-      autoRaf: true,
-      anchors: reduceMotion === true ? ({ immediate: true } as const) : true,
-      smoothWheel: reduceMotion !== true,
-      ...(reduceMotion === true ? { lerp: 1 } : { lerp: 0.08 }),
-    }),
-    [reduceMotion],
-  );
-
   return (
-    <>
-      <ReactLenis root options={lenisOptions} />
-      <StaggerElements />
-      <main className="flex relative flex-col items-center justify-center gap-20 pb-40">
-        <Hero />
-        <Projects />
-        {/* <Tools /> */}
-        <Nav />
-      </main>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<IndexPage />} />
+        <Route path="/project" element={<ProjectPage />} />
+        <Route path="/project/:id" element={<ProjectIdPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }

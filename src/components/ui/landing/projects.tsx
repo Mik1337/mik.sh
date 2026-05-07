@@ -19,8 +19,8 @@ export default function Projects() {
       <div
         className={cn(
           "animate-items",
-          "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3",
-          "gap-4 sm:gap-x-4 sm:gap-y-8",
+          "grid grid-cols-2 md:grid-cols-3",
+          "gap-0 sm:gap-x-5 sm:gap-y-8",
           "px-4",
           "pt-6 sm:pt-8",
           "mx-auto max-w-4xl w-full",
@@ -30,6 +30,7 @@ export default function Projects() {
         {clientWorkProjects.map((project) => (
           <Folder
             key={project.id}
+            id={project.id}
             title={project.title}
             description={project.description}
             media={project.media}
@@ -37,6 +38,7 @@ export default function Projects() {
           />
         ))}
         <Folder
+          id="contact"
           title="Your +"
           description="Interesting in working together?"
           media={[]}
