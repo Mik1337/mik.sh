@@ -6,7 +6,17 @@ import Hero from "../ui/landing/hero";
 import Projects from "../ui/landing/projects";
 import Nav from "../ui/nav";
 
-export default function IndexPage() {
+interface IndexPageProps {
+  animateHeroTitle?: boolean;
+  disableScroll?: boolean;
+  startHeroAnimations?: boolean;
+}
+
+export default function IndexPage({
+  animateHeroTitle = false,
+  disableScroll = false,
+  startHeroAnimations = false,
+}: IndexPageProps) {
   const reduceMotion = useReducedMotion();
 
   const lenisOptions = useMemo(
@@ -21,10 +31,13 @@ export default function IndexPage() {
 
   return (
     <>
-      <ReactLenis root options={lenisOptions} />
+      {!disableScroll && <ReactLenis root options={lenisOptions} />}
       <StaggerElements />
       <main className="flex relative flex-col items-center justify-center gap-20 pb-40">
-        <Hero />
+        <Hero
+          animateTitle={animateHeroTitle}
+          startAnimations={startHeroAnimations}
+        />
         <Projects />
         <Nav />
       </main>

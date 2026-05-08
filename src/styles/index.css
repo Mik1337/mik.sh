@@ -120,6 +120,28 @@ body {
     background-color 400ms ease;
 }
 
+.site-title-transition {
+  view-transition-name: site-title;
+  contain: layout;
+}
+
+::view-transition-group(site-title) {
+  animation-duration: 600ms;
+  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+::view-transition-old(site-title),
+::view-transition-new(site-title) {
+  animation-duration: 600ms;
+  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-title-transition {
+    view-transition-name: none;
+  }
+}
+
 .hero-bg {
   position: relative;
   isolation: isolate;
