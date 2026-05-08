@@ -3,7 +3,7 @@ import { cn } from "@/utils";
 import FolderBg from "./folder-bg";
 import { motion, useReducedMotion } from "motion/react";
 import { Link } from "react-router-dom";
-import File from "@/components/ui/file";
+// import File from "@/components/ui/file";
 
 interface FolderProps {
   title: string;
@@ -18,14 +18,12 @@ export default function Folder({
   title,
   description,
   fill,
-  id,
   className,
 }: FolderProps) {
   const reduceMotion = useReducedMotion();
 
   return (
-    <Link
-      to={`/project/${id}`}
+    <article
       className={cn(
         "relative aspect-270/199 cursor-default perspective-[880px] transform-3d",
         "w-[170px] max-w-[270px] sm:w-full",
@@ -79,6 +77,6 @@ export default function Folder({
           </div>
         </div>
       </motion.div>
-    </Link>
+    </article>
   );
 }

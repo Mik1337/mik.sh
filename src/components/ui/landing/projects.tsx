@@ -1,6 +1,7 @@
 import { clientWorkProjects } from "@/data/clientwork-projects";
 import { cn } from "@/utils";
 import Folder from "../cards/folder";
+import { Link } from "react-router-dom";
 
 export default function Projects() {
   return (
@@ -28,14 +29,19 @@ export default function Projects() {
         )}
       >
         {clientWorkProjects.map((project) => (
-          <Folder
+          <Link
             key={project.id}
-            id={project.id}
-            title={project.title}
-            description={project.description}
-            media={project.media}
-            fill={project.fill}
-          />
+            to={`/project/${project.id}`}
+            className="folder-transition w-full"
+          >
+            <Folder
+              id={project.id}
+              title={project.title}
+              description={project.description}
+              media={project.media}
+              fill={project.fill}
+            />
+          </Link>
         ))}
         <Folder
           id="contact"

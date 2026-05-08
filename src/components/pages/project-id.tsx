@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { clientWorkProjects } from "@/data/clientwork-projects";
-import { cn } from "@/utils";
+// import { cn } from "@/utils";
 import Folder from "@/components/ui/cards/folder";
 
 export default function ProjectIdPage() {
@@ -17,7 +17,7 @@ export default function ProjectIdPage() {
       id="project-id"
       className="projects-bg relative z-2 mx-auto flex min-h-svh w-full flex-col items-start justify-start gap-2 px-4 pt-8 sm:max-w-7xl sm:px-8"
     >
-      <div className="borderitems-start flex w-full flex-row justify-start gap-2 sm:gap-8">
+      <div className="flex w-full flex-row items-start justify-start gap-2 sm:gap-8">
         <Folder
           id={project.id}
           title={project.title}

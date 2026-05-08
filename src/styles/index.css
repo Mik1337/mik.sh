@@ -120,6 +120,33 @@ body {
     background-color 400ms ease;
 }
 
+@view-transition {
+  navigation: auto;
+}
+
+.folder-transition {
+  view-transition-class: folder;
+  contain: layout;
+}
+
+::view-transition-group(.folder) {
+  animation-duration: 600ms;
+  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+::view-transition-old(.folder),
+::view-transition-new(.folder) {
+  animation-duration: 600ms;
+  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .folder-transition {
+    view-transition-class: none;
+    view-transition-name: none;
+  }
+}
+
 .site-title-transition {
   view-transition-name: site-title;
   contain: layout;
