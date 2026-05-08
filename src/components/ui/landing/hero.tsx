@@ -13,20 +13,20 @@ export default function Hero({
   const canAnimateIn = reduceMotion || startAnimations;
 
   return (
-    <section className="hero-bg w-full relative flex min-h-svh flex-col items-center justify-center gap-2 z-2">
+    <section className="hero-bg relative z-2 flex min-h-svh w-full flex-col items-center justify-center gap-2">
       <hgroup
-        className={`flex flex-col text-white drop-shadow-2xs opacity-80 items-center justify-center ${
+        className={`drop-shadow-2xs flex flex-col items-center justify-center text-white opacity-80 ${
           animateTitle ? "site-title-transition" : ""
         }`}
       >
-        <h1 className="text-7xl tracking-wide font-semibold p-0 m-0">MIK</h1>
-        <h2 className="text-3xl tracking-tighter text-center -mt-2 font-bold p-0 m-0">
+        <h1 className="m-0 p-0 text-7xl font-semibold tracking-wide">MIK</h1>
+        <h2 className="m-0 -mt-2 p-0 text-center text-3xl font-bold tracking-tighter">
           SANTOSH
         </h2>
       </hgroup>
-      <div className="flex relative items-center justify-start gap-2">
+      <div className="relative flex items-center justify-start gap-2">
         <motion.p
-          className="text-lg md:text-xl text-center inline-block font-pixel-square text-white opacity-90"
+          className="font-pixel-square inline-block text-center text-lg text-white opacity-90 md:text-xl"
           initial={reduceMotion ? false : { clipPath: "inset(0 100% 0 0)" }}
           animate={
             canAnimateIn
@@ -83,7 +83,7 @@ export default function Hero({
             width={24}
             height={24}
             fill="#fff"
-            className="hover:scale-104 active:scale-98 opacity-90 hover:opacity-100 transition-all duration-300"
+            className="opacity-90 transition-all duration-300 hover:scale-104 hover:opacity-100 active:scale-98"
           />
         </a>
         <a
@@ -95,7 +95,7 @@ export default function Hero({
             width={24}
             height={24}
             fill="#fff"
-            className="hover:scale-104 active:scale-98 opacity-90 hover:opacity-100 transition-all duration-300"
+            className="opacity-90 transition-all duration-300 hover:scale-104 hover:opacity-100 active:scale-98"
           />
         </a>
         <a
@@ -107,7 +107,7 @@ export default function Hero({
             width={24}
             height={24}
             fill="#fff"
-            className="hover:scale-104 active:scale-98 opacity-90 hover:opacity-100 transition-all duration-300"
+            className="opacity-90 transition-all duration-300 hover:scale-104 hover:opacity-100 active:scale-98"
           />
         </a>
         <a
@@ -119,7 +119,7 @@ export default function Hero({
             width={24}
             height={24}
             fill="#fff"
-            className="hover:scale-104 active:scale-98 opacity-90 hover:opacity-100 transition-all duration-300"
+            className="opacity-90 transition-all duration-300 hover:scale-104 hover:opacity-100 active:scale-98"
           />
         </a>
       </motion.div>
@@ -128,7 +128,7 @@ export default function Hero({
 }
 
 function Block() {
-  return <div className="w-2 h-4 bg-white opacity-90 animate-blink" />;
+  return <div className="animate-blink h-4 w-2 bg-white opacity-90" />;
 }
 
 interface IconProps {

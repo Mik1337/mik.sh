@@ -33,13 +33,13 @@ export default function IndexPage({
     <>
       {!disableScroll && <ReactLenis root options={lenisOptions} />}
       <StaggerElements />
-      <main className="flex relative flex-col items-center justify-center gap-20 pb-40">
+      <main className="relative flex flex-col items-center justify-center gap-20 pb-40">
         <Hero
           animateTitle={animateHeroTitle}
           startAnimations={startHeroAnimations}
         />
         <Projects />
-        <Nav />
+        <Nav startAnimations={startHeroAnimations} />
       </main>
     </>
   );

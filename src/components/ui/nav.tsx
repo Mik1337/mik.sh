@@ -5,18 +5,23 @@ const linkClassName = cn(
   "text-white flex flex-row items-center gap-1 font-pixel-square text-base hover:text-amber-400 transition-colors",
 );
 
-export default function Nav() {
+interface NavProps {
+  startAnimations?: boolean;
+}
+
+export default function Nav({ startAnimations = false }: NavProps) {
   const reduceMotion = useReducedMotion();
+  const canAnimateIn = reduceMotion || startAnimations;
 
   return (
     <motion.nav
       initial={reduceMotion ? false : { opacity: 0, y: 10 }}
-      animate={reduceMotion ? false : { opacity: 1, y: 0 }}
+      animate={canAnimateIn ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
       transition={{
         duration: reduceMotion ? 0 : 0.5,
-        delay: reduceMotion ? 0 : 0.5,
+        delay: canAnimateIn ? 0.5 : 0,
       }}
-      className="flex max-w-[80%] gap-4 md:gap-4 z-2 px-4 sm:px-8 py-2.5 border border-amber-400/40 bg-amber-400/20  items-center justify-center min-w-0 w-fit  backdrop-blur-sm fixed bottom-0 left-0 right-0 mb-4 mx-auto"
+      className="fixed right-0 bottom-0 left-0 z-2 mx-auto mb-4 flex w-fit max-w-[80%] min-w-0 items-center justify-center gap-4 border border-amber-400/40 bg-amber-400/20 px-4 py-2.5 backdrop-blur-sm sm:px-8 md:gap-4"
     >
       <a href="#" className={linkClassName}>
         Home

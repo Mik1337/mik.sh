@@ -27,13 +27,13 @@ export default function Folder({
     <Link
       to={`/project/${id}`}
       className={cn(
-        "cursor-default relative aspect-270/199 perspective-[880px] transform-3d",
+        "relative aspect-270/199 cursor-default perspective-[880px] transform-3d",
         "w-[170px] max-w-[270px] sm:w-full",
         className,
       )}
     >
-      <FolderBg className="absolute z-10 inset-0 size-full" fill={fill} />
-      <File className="bottom-10 left-2 w-20 h-20 z-20" />
+      <FolderBg className="absolute inset-0 z-10 size-full" fill={fill} />
+      {/* <File className="bottom-10 left-2 w-20 h-20 z-20" /> */}
       {/*<img
         src="https://placehold.co/100x100"
         className="absolute bottom-10 left-2 z-20"
@@ -62,18 +62,18 @@ export default function Folder({
         className={cn(
           `border-0.5 border-[${fill}]/40`,
           "bg-[#FEFEBD]/20 backdrop-blur-[1px]",
-          "absolute bottom-[0.63%] left-0 right-0",
+          "absolute right-0 bottom-[0.63%] left-0",
           "h-[83.5%] w-full",
           "z-30",
           "rounded-[5.26%]",
         )}
       >
-        <div className="h-full relative mix-blend-plus-overlay text-white/80">
-          <div className="h-full relative">
-            <h2 className="text-base sm:text-xl font-bold  text-center absolute top-[40%] left-0 right-0">
+        <div className="mix-blend-plus-overlay relative h-full text-white/80">
+          <div className="relative h-full">
+            <h2 className="absolute top-[40%] right-0 left-0 text-center text-base font-bold sm:text-xl">
               {title}
             </h2>
-            <p className="text-[10px] leading-tight md:text-sm text-center absolute bottom-[10%] left-0 right-0">
+            <p className="absolute right-0 bottom-[10%] left-0 text-center text-[10px] leading-tight md:text-sm">
               {description}
             </p>
           </div>

@@ -90,14 +90,14 @@ export default function App() {
       {showLoader && (
         <div
           className={`fixed inset-0 z-50 flex flex-col items-center justify-center gap-6 bg-black text-white transition-opacity duration-500 ${
-            isLoaded ? "opacity-0 pointer-events-none" : "opacity-100"
+            isLoaded ? "pointer-events-none opacity-0" : "opacity-100"
           }`}
         >
-          <hgroup className="site-title-transition flex flex-col text-white drop-shadow-2xs opacity-80 items-center justify-center">
-            <h1 className="text-7xl tracking-wide font-semibold p-0 m-0">
+          <hgroup className="site-title-transition drop-shadow-2xs flex flex-col items-center justify-center text-white opacity-80">
+            <h1 className="m-0 p-0 text-7xl font-semibold tracking-wide">
               MIK
             </h1>
-            <h2 className="text-3xl tracking-tighter text-center -mt-2 font-bold p-0 m-0">
+            <h2 className="m-0 -mt-2 p-0 text-center text-3xl font-bold tracking-tighter">
               SANTOSH
             </h2>
           </hgroup>
