@@ -44,9 +44,9 @@
     "Roboto Mono", menlo, monaco, "Liberation Mono", "DejaVu Sans Mono",
     "Courier New", monospace;
 
-  --text: light-dark(var(--text-h), var(--text));
   --text-h: light-dark(#08060d, #d5d8dbf5);
-  --bg: light-dark(#fff, #161d27);
+  --text: light-dark(var(--text-h), var(--text));
+  --bg: light-dark(#fdf6e3, #161d27);
   --border: light-dark(#e5e4e7, #2e303a);
   --code-bg: light-dark(#f4f3ec, #1f2028);
   --accent: light-dark(#aa3bff, #8926ec);
@@ -176,7 +176,7 @@ body {
 
 .hero-bg::after {
   opacity: 1;
-  background: linear-gradient(to bottom, #0d11161f, #161d27 90%);
+  background: linear-gradient(to bottom, #0d11161f, var(--bg) 90%);
 }
 
 @keyframes blink {

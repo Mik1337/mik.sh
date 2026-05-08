@@ -39,7 +39,7 @@ const professionalProjects: ClientWorkProject[] = [
     title: "the^delta",
     description: "social entrepreneurship",
     media: [],
-    fill: "#550707",
+    fill: "#A80000",
   },
   {
     id: "unmute",

@@ -16,7 +16,7 @@ export default function Nav() {
         duration: reduceMotion ? 0 : 0.5,
         delay: reduceMotion ? 0 : 0.5,
       }}
-      className="flex max-w-[80%] gap-4 md:gap-4 z-2 px-4 sm:px-8 py-2.5 border border-amber-400/40 bg-amber-400/20  items-center justify-center min-w-0 w-fit max-w-screen-sm  backdrop-blur-sm fixed bottom-0 left-0 right-0 mb-4 mx-auto"
+      className="flex max-w-[80%] gap-4 md:gap-4 z-2 px-4 sm:px-8 py-2.5 border border-amber-400/40 bg-amber-400/20  items-center justify-center min-w-0 w-fit  backdrop-blur-sm fixed bottom-0 left-0 right-0 mb-4 mx-auto"
     >
       <a href="#" className={linkClassName}>
         Home
@@ -38,4 +38,3 @@ export default function Nav() {
 function Separator() {
   return <span className="text-white/10">|</span>;
 }
-

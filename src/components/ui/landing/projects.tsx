@@ -13,7 +13,7 @@ export default function Projects() {
           Projects
         </h2>
         <p className="text-lg text-center font-pixel-square text-white opacity-80">
-          Stuff I've built, in no particular order.
+          Projects I've worked on, in no particular order.
         </p>
       </hgroup>
       <div

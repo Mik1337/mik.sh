@@ -1,7 +1,27 @@
-import { motion, useReducedMotion } from "motion/react";
+import { motion, useReducedMotion, type Variants } from "motion/react";
 
 export default function Hero() {
   const reduceMotion = useReducedMotion();
+  const socialContainerVariants: Variants = {
+    hidden: {},
+    show: {
+      transition: {
+        delayChildren: reduceMotion ? 0 : 0.5,
+        staggerChildren: reduceMotion ? 0 : 0.15,
+      },
+    },
+  };
+  const socialItemVariants: Variants = {
+    hidden: { opacity: 0, y: 10 },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: reduceMotion ? 0 : 0.85,
+        ease: [0.22, 1, 0.36, 1] as const,
+      },
+    },
+  };
 
   return (
     <section className="hero-bg w-full relative flex min-h-svh flex-col items-center justify-center gap-2 z-2">
@@ -26,14 +46,18 @@ export default function Hero() {
         </motion.p>
         <Block />
       </div>
-      <div
+      <motion.div
+        initial={reduceMotion ? false : "hidden"}
+        animate="show"
+        variants={socialContainerVariants}
         id="social"
         className="flex flex-row items-center justify-center gap-4"
       >
-        <a
+        <motion.a
           href="https://github.com/Mik1337"
           target="_blank"
           rel="noopener noreferrer"
+          variants={socialItemVariants}
         >
           <Github
             width={24}
@@ -41,11 +65,12 @@ export default function Hero() {
             fill="#fff"
             className="hover:scale-104 active:scale-98 opacity-90 hover:opacity-100 transition-all duration-300"
           />
-        </a>
-        <a
+        </motion.a>
+        <motion.a
           href="https://x.com/AvocadoMik"
           target="_blank"
           rel="noopener noreferrer"
+          variants={socialItemVariants}
         >
           <Twitter
             width={24}
@@ -53,11 +78,12 @@ export default function Hero() {
             fill="#fff"
             className="hover:scale-104 active:scale-98 opacity-90 hover:opacity-100 transition-all duration-300"
           />
-        </a>
-        <a
+        </motion.a>
+        <motion.a
           href="https://bsky.app/profile/mik.sh"
           target="_blank"
           rel="noopener noreferrer"
+          variants={socialItemVariants}
         >
           <Bluesky
             width={24}
@@ -65,11 +91,12 @@ export default function Hero() {
             fill="#fff"
             className="hover:scale-104 active:scale-98 opacity-90 hover:opacity-100 transition-all duration-300"
           />
-        </a>
-        <a
+        </motion.a>
+        <motion.a
           href="mailto:workwithme@mik.sh"
           target="_blank"
           rel="noopener noreferrer"
+          variants={socialItemVariants}
         >
           <Email
             width={24}
@@ -77,8 +104,8 @@ export default function Hero() {
             fill="#fff"
             className="hover:scale-104 active:scale-98 opacity-90 hover:opacity-100 transition-all duration-300"
           />
-        </a>
-      </div>
+        </motion.a>
+      </motion.div>
     </section>
   );
 }

@@ -3,6 +3,7 @@ import { cn } from "@/utils";
 import FolderBg from "./folder-bg";
 import { motion, useReducedMotion } from "motion/react";
 import { Link } from "react-router-dom";
+import File from "@/components/ui/file";
 
 interface FolderProps {
   title: string;
@@ -31,7 +32,12 @@ export default function Folder({
         className,
       )}
     >
-      <FolderBg className="absolute inset-0 size-full" fill={fill} />
+      <FolderBg className="absolute z-10 inset-0 size-full" fill={fill} />
+      <File className="bottom-10 left-2 w-20 h-20 z-20" />
+      {/*<img
+        src="https://placehold.co/100x100"
+        className="absolute bottom-10 left-2 z-20"
+      />*/}
       <motion.div
         initial="rest"
         whileHover="hover"
@@ -55,9 +61,10 @@ export default function Folder({
         }}
         className={cn(
           `border-0.5 border-[${fill}]/40`,
-          "bg-[#FEFEBD]/20 backdrop-blur-sm",
+          "bg-[#FEFEBD]/20 backdrop-blur-[1px]",
           "absolute bottom-[0.63%] left-0 right-0",
           "h-[83.5%] w-full",
+          "z-30",
           "rounded-[5.26%]",
         )}
       >
