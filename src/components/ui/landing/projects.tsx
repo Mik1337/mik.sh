@@ -6,7 +6,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="projects-bg relative z-2 mx-auto flex min-h-svh w-full max-w-7xl flex-col items-center justify-start gap-2"
+      className="projects-bg relative z-2 mx-auto flex min-h-3/4 w-full max-w-7xl flex-col items-center justify-start gap-2"
     >
       <hgroup className="animate-title flex flex-col items-center justify-start gap-2">
         <h2 className="font-pixel-circle text-center text-6xl font-bold text-white opacity-80">
