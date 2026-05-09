@@ -2,8 +2,8 @@ import type { ClassValue } from "clsx";
 import { cn } from "@/utils";
 import FolderBg from "./folder-bg";
 import { motion, useReducedMotion } from "motion/react";
-import { Link } from "react-router-dom";
 // import File from "@/components/ui/file";
+import { Link } from "react-router-dom";
 
 interface FolderProps {
   title: string;
@@ -19,6 +19,7 @@ export default function Folder({
   description,
   fill,
   className,
+  id,
 }: FolderProps) {
   const reduceMotion = useReducedMotion();
 
@@ -68,9 +69,14 @@ export default function Folder({
       >
         <div className="mix-blend-plus-overlay relative h-full text-white/80">
           <div className="relative h-full">
-            <h2 className="absolute top-[40%] right-0 left-0 text-center text-base font-bold sm:text-xl">
-              {title}
-            </h2>
+            <Link
+              to={`/project/${id}`}
+              className="absolute inset-0 z-20 size-full"
+            >
+              <h2 className="absolute top-[40%] right-0 left-0 text-center text-base font-bold sm:text-xl">
+                {title}
+              </h2>
+            </Link>
             <p className="absolute right-0 bottom-[10%] left-0 text-center text-[10px] leading-tight md:text-sm">
               {description}
             </p>

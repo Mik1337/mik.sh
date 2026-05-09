@@ -1,7 +1,6 @@
 import { clientWorkProjects } from "@/data/clientwork-projects";
 import { cn } from "@/utils";
 import Folder from "../cards/folder";
-import { Link } from "react-router-dom";
 
 export default function Projects() {
   return (
@@ -20,36 +19,22 @@ export default function Projects() {
       <div
         className={cn(
           "animate-items",
-          "grid grid-cols-2 md:grid-cols-3",
-          "gap-x-2 gap-y-8 sm:gap-x-5 sm:gap-y-8",
-          "px-4",
-          "pt-6 sm:pt-8",
-          "mx-auto w-full max-w-4xl",
+          "grid grid-cols-2",
+          "gap-x-2 gap-y-8 pt-6 sm:pt-8",
+          "w-full max-w-4xl",
           "items-stretch justify-items-center",
         )}
       >
         {clientWorkProjects.map((project) => (
-          <Link
+          <Folder
             key={project.id}
-            to={`/project/${project.id}`}
-            className="folder-transition w-full"
-          >
-            <Folder
-              id={project.id}
-              title={project.title}
-              description={project.description}
-              media={project.media}
-              fill={project.fill}
-            />
-          </Link>
+            id={project.id}
+            title={project.title}
+            description={project.description}
+            media={project.media}
+            fill={project.fill}
+          />
         ))}
-        <Folder
-          id="contact"
-          title="Your +"
-          description="Interesting in working together?"
-          media={[]}
-          fill="#3F251D"
-        />
       </div>
     </section>
   );
