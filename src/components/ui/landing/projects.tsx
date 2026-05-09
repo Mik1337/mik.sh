@@ -19,7 +19,7 @@ export default function Projects() {
       <div
         className={cn(
           "animate-items",
-          "grid grid-cols-2",
+          "grid grid-cols-1 sm:grid-cols-3",
           "gap-x-2 gap-y-8 pt-6 sm:pt-8",
           "w-full max-w-4xl",
           "items-stretch justify-items-center",

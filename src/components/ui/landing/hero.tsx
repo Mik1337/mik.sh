@@ -39,7 +39,7 @@ export default function Hero({
             delay: reduceMotion ? 0 : 0.12,
           }}
         >
-          I'm a freelance design engineer.
+          freelance designer & developer
         </motion.p>
         <motion.span
           className="inline-flex shrink-0 items-center self-center"

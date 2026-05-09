@@ -14,25 +14,18 @@ export type ClientWorkProject = {
 
 const professionalProjects: ClientWorkProject[] = [
   {
-    id: "dashboards",
-    title: "Dashboards",
-    description: "Various web apps for a variety of clients",
-    media: [],
-    fill: "#8BB001",
-  },
-  {
     id: "landing-pages",
-    title: "landing pages",
+    title: "Landing pages",
     description: "social entrepreneurship dashboard",
     media: [],
     fill: "#3F251D",
   },
   {
-    id: "zoho",
-    title: "Built on Zoho",
-    description: "social entrepreneurship dashboard",
+    id: "dashboards",
+    title: "Dashboards",
+    description: "Various web apps for a variety of clients",
     media: [],
-    fill: "#A80000",
+    fill: "#8BB001",
   },
   {
     id: "apps",
