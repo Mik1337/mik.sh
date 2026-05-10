@@ -85,15 +85,17 @@ export default function App() {
     return () => window.clearTimeout(timeoutId);
   }, [isLoaded, showLoader]);
 
+  // eslint-disable-next-line react-hooks/purity
+  const randomBg = Math.floor(Math.random() * 3 + 1);
   return (
     <BrowserRouter>
       {showLoader && (
         <div
-          className={`fixed inset-0 z-50 flex flex-col items-center justify-center gap-6 bg-black text-white transition-opacity duration-500 ${
+          className={`loading-bg-${randomBg} fixed inset-0 z-50 flex flex-col items-center justify-center gap-6 bg-amber-900 text-white transition-opacity duration-500 ${
             isLoaded ? "pointer-events-none opacity-0" : "opacity-100"
           }`}
         >
-          <hgroup className="site-title-transition drop-shadow-2xs flex flex-col items-center justify-center text-white opacity-80">
+          <hgroup className="site-title-transition drop-shadow-2xs flex flex-col items-center justify-center text-white">
             <h1 className="m-0 p-0 text-7xl font-semibold tracking-wide">
               MIK
             </h1>
@@ -101,6 +103,9 @@ export default function App() {
               SANTOSH
             </h2>
           </hgroup>
+          <p className="font-pixel-square animate-blink text-center text-2xl text-white opacity-90">
+            don't rush the KUMPUTER...
+          </p>
         </div>
       )}
       <Routes>

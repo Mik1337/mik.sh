@@ -21,7 +21,7 @@ export default function Nav({ startAnimations = false }: NavProps) {
         duration: reduceMotion ? 0 : 0.5,
         delay: canAnimateIn ? 0.5 : 0,
       }}
-      className="fixed right-0 bottom-0 left-0 z-2 mx-auto mb-4 flex w-fit max-w-[80%] min-w-0 items-center justify-center gap-4 border border-amber-400/40 bg-amber-400/20 px-4 py-2.5 backdrop-blur-sm sm:px-8 md:gap-4"
+      className="fixed right-0 bottom-0 left-0 z-2 mx-auto mb-4 flex w-fit max-w-[80%] min-w-0 items-center justify-center gap-4 border border-amber-400/80 bg-amber-400/40 px-4 py-2.5 backdrop-blur-sm sm:px-8 md:gap-4"
     >
       <a href="#" className={linkClassName}>
         Home

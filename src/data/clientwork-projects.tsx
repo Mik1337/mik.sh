@@ -18,21 +18,21 @@ const professionalProjects: ClientWorkProject[] = [
     title: "Landing pages",
     description: "social entrepreneurship dashboard",
     media: [],
-    fill: "#3F251D",
+    fill: "#63980A",
   },
   {
     id: "dashboards",
     title: "Dashboards",
     description: "Various web apps for a variety of clients",
     media: [],
-    fill: "#8BB001",
+    fill: "#D4BB32",
   },
   {
     id: "apps",
     title: "Mobile Apps",
     description: "Anonymous workplace abuse reporting",
     media: [],
-    fill: "#5C4D00",
+    fill: "#DAA767",
   },
 ];
 
