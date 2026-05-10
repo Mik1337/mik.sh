@@ -99,7 +99,7 @@ export default function Tools() {
     <section
       ref={containerRef}
       id="tools"
-      className="tools-bg relative z-2 mx-auto flex min-h-svh w-full max-w-7xl flex-col items-center justify-start gap-2 pt-80"
+      className="loading-bg-4 tools-bg relative z-2 flex min-h-svh w-full flex-col items-center justify-start gap-2 pt-80"
     >
       <div className="relative w-1/2">
         <img
