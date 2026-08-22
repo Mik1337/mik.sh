@@ -99,7 +99,7 @@ export default function Hero({
           />
         </a>
         <a
-          href="https://bsky.app/profile/mik.sh"
+          href="https://bsky.app/profile/cridamour.com"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -111,7 +111,7 @@ export default function Hero({
           />
         </a>
         <a
-          href="mailto:workwithme@mik.sh"
+          href="mailto:mik@cridamour.com"
           target="_blank"
           rel="noopener noreferrer"
         >

@@ -3,9 +3,9 @@ import { useReducedMotion } from "motion/react";
 import { ReactLenis } from "lenis/react";
 import { StaggerElements } from "../animation/staggger-elements";
 import Hero from "../ui/landing/hero";
-import Projects from "../ui/landing/projects";
-import Tools from "../ui/landing/tools";
-import Nav from "../ui/nav";
+// import Projects from "../ui/landing/projects";
+// import Tools from "../ui/landing/tools";
+// import Nav from "../ui/nav";
 
 interface IndexPageProps {
   animateHeroTitle?: boolean;
@@ -39,9 +39,10 @@ export default function IndexPage({
           animateTitle={animateHeroTitle}
           startAnimations={startHeroAnimations}
         />
-        <Projects />
-        <Tools />
-        <Nav startAnimations={startHeroAnimations} />
+        {/* <Projects />
+        <Tools /> */}
+
+        {/* <Nav startAnimations={startHeroAnimations} /> */}
       </main>
     </>
   );

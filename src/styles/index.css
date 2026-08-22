@@ -169,6 +169,10 @@ body {
   }
 }
 
+.projects-bg {
+  background-color: var(--bg);
+}
+
 .hero-bg {
   position: relative;
   isolation: isolate;
